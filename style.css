@@ -97,6 +97,11 @@ img{
     align-items: center;
     text-align: center;
 }
+.hdn-h{
+    height: 0;
+    visibility: hidden;
+    width: 0;
+}
 
 .fnt-fmly{
     font-family: 'Kumbh Sans', sans-serif;
