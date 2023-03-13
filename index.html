@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <!-- Victor Crest
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Victor Crest
   26
   London
 
@@ -31,6 +43,52 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-  <!-- ui code -->
-</body>
+    <!-- ui code -->
+    <div class="cover">
+      <div class="bgimg-aligner">
+        <img
+          id="bg-img1"
+          src="./images/bg-pattern-top.svg"
+          alt="partial circle pattern"
+        />
+        <img
+          id="bg-img2"
+          src="./images/bg-pattern-bottom.svg"
+          alt="partial circle pattern"
+        />
+      </div>
+      <main class="container">
+        <div class="sec-bg"></div>
+        <div class="part-img-cntnr">
+          <div class="img-box img-htr">
+            <img
+              class="profile-pic"
+              src="./images/image-victor.jpg"
+              alt="victor's photo"
+            />
+          </div>
+        </div>
+        <div class="intro fnt-fmly">
+          <div class="img-htr"></div>
+          <p class="fnt-wt700 fnt-sizebig fnt-clr-ddb">Victor Crest <span>26</span></p>
+          <p class="fnt-clr-dgb">London</p>
+        </div>
+        <hr />
+        <div class="stats fnt-fmly">
+          <div>
+            <p class="fnt-wt700 fnt-sizebig fnt-clr-ddb">80K</p>
+            <p class="fnt-clr-dgb">Followers</p>
+          </div>
+          <div>
+            <p class="fnt-wt700 fnt-sizebig fnt-clr-ddb">803K</p>
+            <p class="fnt-clr-dgb">Likes</p>
+          </div>
+          <div>
+            <p class="fnt-wt700 fnt-sizebig fnt-clr-ddb">1.4K</p>
+            <p class="fnt-clr-dgb">Photos</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

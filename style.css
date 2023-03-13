@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+h1, h2, h3, h4, h5, h6, p, body, hr{
+    margin: 0;
+}
+
+img{
+    display: block;
+}
+
+.cover{
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: -1;
+}
+
+.bgimg-aligner{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 425px;
+    width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#bg-img1{
+    position: absolute;
+    top: -500px;
+    left: -1000px;
+    z-index: -1;
+}
+
+#bg-img2{
+    position: absolute;
+    bottom: -600px;
+    z-index: -1;
+}
+
+.sec-bg{
+    background-image: url('./images/bg-pattern-card.svg');
+    height: 35%;
+    z-index: -1;
+}
+
+.part-img-cntnr{
+    position: relative;
+}
+
+.img-box{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-htr{
+    height: 55px;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    border: 4px solid white;
+    height: 200%;
+    transform: translateY(-50%);
+}
+
+.intro{
+    height: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats{
+    padding: 25px 60px;
+    background-color: white;
+    height: 25%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.fnt-fmly{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.fnt-wt400{
+    font-weight: 400;
+}
+
+.fnt-wt700{
+    font-weight: 700;
+}
+
+.fnt-sizebig{
+    font-size: 22px;
+}
+
+.fnt-clr-ddb{
+    color: hsl(229, 23%, 23%);
+}
+
+.fnt-clr-dgb{
+    color: hsl(227, 10%, 46%);
+}
+
+@media screen and (max-width: 375px) {
+    .container{
+        width: 350px;
+        height: 375px;
+    }
+
+    .img-htr{
+        height: 50px;
+    }
+  
+    .fnt-sizebig{
+        font-size: 20px;
+    }
+}
